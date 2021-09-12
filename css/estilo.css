@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .logo {
+    width: 100px;
+    align-content: inherit;
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  /* ID Menu para definir el menu desplegable */
+#menu{
+  float: right;
+}
+#menu li>a{
+  color: white;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  min-width: 100px;
+}
+#menu li>a:hover{
+  color: #000;
+  background-color: #ffd4d4;
+}
+#menu>li{
+  float: left;
+  text-align:center;
+}
+#menu>li>ul{
+  display: none;
+}
+#menu>li:hover>ul {
+  display:block;
+}
+
+
+/* class menu para las secciones de las paginas*/
+  .menu {
+    float: left;
+    width: 80%;
+    text-align: center;
+    padding: 9px;
+  }
+  
+  .menu a {
+    background-color: #e5e5e5;
+    padding: 8px;
+    margin-top: 7px;
+    display: inline;
+    width: 100%;
+    color: black;
+  }
+
+  header {
+   background: salmon;
+   margin: 0 auto;
+   font-family: 'Glory', sans-serif;
+  }
+  header .central {
+    float: left;
+    width: 50%;
+  }
+  header h1 {
+    display: inline;
+  }
+
+  body {
+  font-family: 'Glory', sans-serif;
+  }
+
+  h1, h2, h3 {
+    padding: 1rem;
+  }
+
+  .empresa {
+    padding: 1em;
+  }
+  .main {
+    float: left;
+    width: 40%;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .right, .left {
+    background-color: #e5e5e5;
+    float: left;
+    width: 33%;
+    padding: 15px;
+    align-content: center;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }
