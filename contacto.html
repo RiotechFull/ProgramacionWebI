@@ -1,33 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Contacto y consultas</title>
+  
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/formularios.css" type="text/css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+
+<style>
+  .titulos{
+    color: orangered;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+
+</style>
 </head>
+
 <body>
+  <header>
+   <h1>El Pollo</h1> 
+   <img src="img/pollo.png" class="logo">  
+   <h2>delicioso y jugoso</h2>
+   
+      <div class="topnav" id="menu">
+        <ol>
+          <li><a href="libros.html">Libros</a></li>
+          <li><a href="contacto.html" style="color: rgb(199, 0, 57);" title="Contacto">Contacto</a></li>
+    <li><a href="https://htmlcolorcodes.com/es/" target="_blank">Colores Web</a></li>
+    <li><a href="ciudades.html">Ejemplo de Ciudades</a> </li>
+      </ol>
+    </div>
+    </header>
+<main>
+<form action="envio.php" method="POST">
+  <label for="nomUsu">Usuario:</label>
+  <input type="text" id="nomUsu" name="nomUsu" value="tu Usuario en el sistema"><br>
+  <label for="fname">Nombre:</label>
+    <input type="text" id="fname" name="fname" value="tu nombre"><br>
+    <label for="lname">Apellido:</label>
+    <input type="text" id="lname" name="lname" value="tu apellido"><br><br>
+    <label for="email">Correo:</label>
+    <input type="text" id="email" name="email" value="tu mail"><br><br>
 
-  <ol type="a">
-    <li><a href="contacto.html">Contacto</a> |</li>
-    <li><a href="https://htmlcolorcodes.com/es/" target="_blank">Colores Web</a> |</li>
-    <li><a href="somos.html">Somos</a> |</li>
-    <li><a href="ciudades.html">Ejemplo de Ciudades</a> |</li>
-     <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_template3" target="_blank">Otro de HTML y CSS</a> |</li>
-</ol>
-
-<form action="index.html">
-    <label for="fname">Nombre:</label><br>
-    <input type="text" id="fname" name="fname" value=""><br>
-    <label for="lname">Apellido:</label><br>
-    <input type="password" id="lname" name="lname" value="Perez"><br><br>
-    <input type="radio" id="html" name="fav_language" value="HTML">
-    <label for="html">HTML</label><br>
-    <input type="radio" id="css" name="fav_language" value="CSS">
-    <label for="css">CSS</label><br>
-    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-    <label for="javascript">JavaScript</label> <br>
     <input type="submit" value="Enviar Consulta">
+
 </form> 
 
+</main>
+<footer>
+  <ol>
+    <li><a href="libros.html">Libros</a> |</li>
+    <li><a href="contacto.html" style="color: rgb(199, 0, 57);" title="Contacto">Contacto</a> |</li>
+    <li><a href="https://htmlcolorcodes.com/es/" target="_blank">Colores Web</a> |</li>
+    <li><a href="ciudades.html">Ejemplo de Ciudades</a> |</li>
+</ol>
+
+</footer>
 </body>
 </html>

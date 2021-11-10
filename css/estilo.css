@@ -18,6 +18,7 @@
   /* ID Menu para definir el menu desplegable */
 #menu{
   float: right;
+  z-index: 5;
 }
 #menu li>a{
   color: white;
@@ -42,6 +43,7 @@
 }
 
 
+
 /* class menu para las secciones de las paginas*/
   .menu {
     float: left;
@@ -60,7 +62,8 @@
   }
 
   header {
-   background: salmon;
+   background: salmon url("../img/ rio-los-reartes.jpg") repeat-x;
+   /*opacity: 0.3;*/
    margin: 0 auto;
    font-family: 'Glory', sans-serif;
   }
@@ -99,6 +102,16 @@
     text-align: center;
   }
   
+
+
+  div .titulos {
+    width: 60%;
+    border: 3px solid #f63;
+    margin: auto;
+  }
+
+
+
   @media only screen and (max-width: 620px) {
     /* For mobile phones: */
     .menu, .main, .right {

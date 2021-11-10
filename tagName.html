@@ -1,0 +1,70 @@
+<html>
+
+<head>
+<title>ejemplo de getElementsByTagName</title>
+
+<script type="text/javascript">
+
+function getAllParaElems()
+{
+  var allParas = document.getElementsByTagName("p");
+
+  var num = allParas.length;
+
+  alert("Hay " + num + " <p> elementos en este documento");
+}
+
+
+function div1ParaElems()
+{
+  var div1 = document.getElementById("div1")
+  var div1Paras = div1.getElementsByTagName("p");
+
+  var num = div1Paras.length;
+
+  alert("Hay " + num + " <p> elementos en el elemento div1");
+}
+
+
+function div2ParaElems()
+{
+  var div2 = document.getElementById("div2")
+  var div2Paras = div2.getElementsByTagName("p");
+
+  var num = div2Paras.length;
+
+  alert("Hay " + num + " <p> elementos en el elemento div2");
+}
+
+</script>
+</head>
+
+<body style="border: solid green 3px">
+<p>Algo de texto</p>
+<p>Algo de texto</p>
+
+  <div id="div1" style="border: solid blue 3px">
+    <p>Algo de texto en div1</p>
+    <p>Algo de texto en div1</p>
+    <p>Algo de texto en div1</p>
+
+    <div id="div2" style="border: solid red 3px">
+    <p>Algo de texto en div2</p>
+    <p>Algo de texto en div2</p>
+    </div>
+  </div>
+
+<p>Algo de texto</p>
+<p>Algo de texto</p>
+
+<button onclick="getAllParaElems();">
+ muestra todos los elementos p en el documento</button><br />
+
+<button onclick="div1ParaElems();">
+ muestra todos los elementos p en div1</button><br />
+
+<button onclick="div2ParaElems();">
+ muestra todos los elementos p en div2</button>
+
+</body>
+</html>

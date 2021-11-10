@@ -1,0 +1,61 @@
+<html>
+<head>
+  <title>Validación de Formularios</title>
+  <script>
+ 
+ const btnEnviar = document.getElementById('btn-enviar');
+
+const validación = (e) => {
+  e.preventDefault();
+  const nombreDeUsuario = document.getElementById('usuario');
+  const direcciónEmail = document.getElementById('email');
+  if (usuario.value === "") {
+    alert("Por favor, escribe tu nombre de usuario.");
+    usuario.focus();
+    return false;
+  }
+    
+  if (email.value === "") {
+    alert("Por favor, escribe tu correo electrónico");
+    email.focus();
+    return false;
+  }
+
+  if (!emailVálido(email.value)) {
+    alert("Por favor, escribe un correo electrónico válido");
+    emailAddress.focus();
+    return false;
+  }
+  
+  return true; //Se pueden enviar los datos del formulario al servidor
+}
+
+const emailVálido = email => {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+submitBtn.addEventListener('click', validate);
+
+  </script>
+</head>
+<body>
+  <form id="formulario">
+    <table cellspacing="2" cellpadding="2" border="1">
+      <tr>
+        <td align="right">Nombre de Usuario</td>
+        <td><input type="text" id="usuario" /></td>
+      </tr>
+      <tr>
+        <td align="right">Email</td>
+        <td><input type="text" id="email" /></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" value="Submit" id="btn-enviar" /></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
+
+<!-- https://www.freecodecamp.org/espanol/news/validacion-basica-de-formularios-en-javascript/ -->

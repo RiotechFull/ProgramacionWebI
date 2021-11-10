@@ -2,24 +2,34 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 /* estilo general*/
-h1 {
+h2, h3, h4{
   color: rgb(165, 2, 2);
+  font-family: 'Lily Script One', cursive;
   text-align: center;
+}
+h1 {
+  text-align: left;
+   font-family: 'Style Script', cursive;
+  display: inline;
+   /*border: 1px solid darkblue;
+ text-shadow: 3px 3px 1px black;
+  */
 }
 
 p {
   font-family: verdana;
   font-size: 20px;
+  padding: 5px;
 }
 
+.logo {
+  width: 10em;
+  
+}
 
-/* Style the header */
+/* Estilo de header */
 header {
   background-color: #666;
   padding: 30px;
@@ -28,7 +38,7 @@ header {
   color: white;
 }
 
-/* Create two columns/boxes that floats next to each other */
+/* Crea dos columnas / cajas que floten una al lado de la otra */
 nav {
   float: left;
   width: 30%;
@@ -37,7 +47,7 @@ nav {
   padding: 20px;
 }
 
-/* Style the list inside the menu */
+/* Estilo de la lista dentro del menú */
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -55,17 +65,17 @@ article {
   padding: 20px;
   width: 70%;
   background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
+  height: 300px;  
 }
 
-/* Clear floats after the columns */
+/* Limpiar flotadores después de las columnas */
 section::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Style the footer */
+/* Estilo del Footer */
 footer {
   background-color: #777;
   padding: 10px;
@@ -73,7 +83,7 @@ footer {
   color: white;
 }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+/* Diseño responsivo hace que las dos columnas / cuadros se apilen una encima de la otra en lugar de una al lado de la otra, en pantallas pequeñas */
 @media (max-width: 600px) {
   nav, article {
     width: 100%;
@@ -90,15 +100,16 @@ footer {
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #d83535;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 1rem;
 }
 
 /* cambiar color on hover / paso el puntero del mouse */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: rgb(109, 241, 219);
   color: black;
 }
 
@@ -113,4 +124,22 @@ footer {
 .footer {
   background-color: #f1f1f1;
   padding: 10px;
+}
+footer{
+  background-color: cyan;
+}
+
+html{
+  background-color: beige;
+}
+
+body {
+  background-color: coral;
+  margin: 20;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu{
+  font-weight: 400;
+  font-style: italic;
 }
